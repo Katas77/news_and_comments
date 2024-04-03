@@ -22,6 +22,7 @@ public class UpsertCommentRequest {
     @Positive(message = "ID новости должно быть больше 0!")
     private Long news_id;
 
+
     @NotBlank(message = "поле коментарий    должно быть заполнено!")
     @Size(min = 3, max = 80, message = "поле коментарий  не может быть меньше {min} и больше {max}!")
     private String text;
