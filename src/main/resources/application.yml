@@ -1,0 +1,19 @@
+spring.application.name: NewsAndComments
+spring:
+  main:
+    allow-circular-references: true
+  jpa:
+    generate-ddl: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/app_db
+    username: commentNews
+    password: news
+    hikari:
+      schema: app_schema
+      connection-init-sql: create schema if not exists app_schema
+      connection-timeout: 10000
+server:
+  port: 8080
+app:
+  check-client-api-header: false
+  client-api-key: 12345

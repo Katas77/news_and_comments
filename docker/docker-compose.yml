@@ -1,0 +1,22 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:12.3
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=commentNews
+      - POSTGRES_PASSWORD=news
+      - POSTGRES_DB=app_db
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+
+
+
+# cd docker
+# docker-compose up
+
+
+#Команда Docker-Compose up развёртывает сервисы веб-приложений и создаёт из docker-образа новые контейнеры, а также сети, тома и все конфигурации, указанные в файле Docker Compose.
+# Добавляя флаг -d, вы выполняете команду в раздельном или фоновом режиме, сохраняя возможность управления терминалом (чуть ниже рассмотрим примеры для наглядности).
