@@ -18,10 +18,10 @@ public class UpsertCommentRequest {
     @Positive(message = "ID пользователя должно быть больше 0!")
     private Long user_id;
 
+
     @NotNull(message = "ID новости  должно быть указано")
     @Positive(message = "ID новости должно быть больше 0!")
     private Long news_id;
-
 
 
     @NotBlank(message = "поле коментарий    должно быть заполнено!")
