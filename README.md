@@ -3,7 +3,7 @@
 </center>
 
 ## Overview:
--  "News comments"The News Comments application is a small console application based on the Representational State Transfe software architecture. 
+-  The News Comments application is a small console application based on the Representational state Transfer software architecture. . 
 - It Implements a REST API for a news service
 
 
